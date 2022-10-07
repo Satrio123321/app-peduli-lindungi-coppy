@@ -1,6 +1,6 @@
 
 import * as React from 'react';
-import {View, Text,  Image, } from 'react-native';
+import {View, Text,  Image,StatusBar } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import {IconSplash} from '../../assets';
 import {Logokpcpen, Logokominfo, Logokemenkes, Logobumn} from '../../assets';
@@ -13,13 +13,18 @@ export default SplashScreen = ({navigation}) => {
     }, [navigation]);
 
 return (
-    <SafeAreaView style={{flex: 1}}>
+  <SafeAreaView style={{ flex: 1 }}>
     
-      <View style={{
+    <StatusBar
+        barStyle="light-content"
+        animated={true}
+      color="#61dafb" />
+    
+        <View style={{
           flex:1,
           alignItems:'center',
-          justifyContent:'center'}}>
-
+          justifyContent: 'center'}}>
+      
         <Image source={IconSplash} 
         style={{
           resizeMode:'center',}}/>
@@ -75,9 +80,5 @@ return (
 </SafeAreaView>
          
           
-       
-      
-  
-    
     );
     };
