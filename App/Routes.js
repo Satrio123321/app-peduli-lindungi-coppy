@@ -4,6 +4,7 @@ import {
   SplashScreen, 
   LoginScreen,
 } from './Pages';
+import HomeScreen from './Pages/HomeScreen';
 
 const Stack = createStackNavigator();
 
@@ -12,6 +13,7 @@ export default Router = () => {
     <Stack.Navigator initialRouteName="SplashScreen">
      <Stack.Screen name="SplashScreen" component={SplashScreen} options={{headerShown: false}} />
      <Stack.Screen name="LoginScreen" component={LoginScreen} options={{headerShown: false}} />
-     </Stack.Navigator>
+     <Stack.Screen name="HomeScreen" component={HomeScreen} options={{headerShown: false}} />
+    </Stack.Navigator>
        );
 }; 
