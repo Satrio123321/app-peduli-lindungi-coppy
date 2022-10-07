@@ -1,21 +1,27 @@
 import * as React from 'react';
 
-import {View, Text, TextInput , Image, TouchableOpacity} from 'react-native';
-
+import {View, Text, TextInput , Image, TouchableOpacity, StatusBar,ScrollView} from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import {Loginlogo,Logokpcpen, Logokominfo, Logokemenkes, Logobumn} from '../../assets';
 
 
 export default LoginScreen =  ({navigation}) => {
 
     return (
-        
-         <View style={{ flex:1 }}>
-        <View style={{flex:1,
-        justifyContent:'flex-end'
-        ,alignItems:'center',
-        marginTop:10}}>
+        <ScrollView>
+        <SafeAreaView style={{ flex: 1 }}>
+           
+            <StatusBar
+        barStyle="light-content"
+        animated={true}
+        color="#61dafb" />
+            <View style={{
+                flex: 1,
+                justifyContent: 'flex-end',
+                alignItems: 'center',
+                marginTop:100,}}>
          <Image 
-          style={{height:275,width:275}} 
+          style={{height:255,width:255}} 
           resizeMode={'stretch'}
           source={Loginlogo} />
            </View>
@@ -45,20 +51,25 @@ export default LoginScreen =  ({navigation}) => {
 
         </View>
 
-        <TouchableOpacity onPress={()=>navigation.navigate('SplashScreen')}>
+        <TouchableOpacity onPress={()=>navigation.navigate('HomeScreen')}>
         <View style={{
-            backgroundColor:'darkslategrey',justifyContent:'center',alignItems:'center',
-            padding:15,
-            marginHorizontal:60,
-            marginTop:10,
-            borderWidth:0,
-            borderRadius:10
+                        backgroundColor: 'darkslategrey',
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                        padding: 15,
+                        marginHorizontal: 60,
+                        marginTop: 10,
+                        borderWidth: 0,
+                        borderRadius: 10,
+                        marginBottom:50,
+
             }}>
          
                         <Text style={{
-                            textAlign:'center',
-                            color:'white',
-                            fontSize:20,
+                            
+                            textAlign: 'center',
+                            color: 'white',
+                            fontSize: 20,
                         }}>Login</Text>      
         </View>
         </TouchableOpacity>
@@ -68,8 +79,8 @@ export default LoginScreen =  ({navigation}) => {
         <Text style={{
           marginStart:20,
           fontSize:15,
-          marginBottom:3,
-          marginTop:175
+          marginBottom:5,
+          marginTop:160,
           }}>Bekerjasama Dengan : </Text>
         </View>
 
@@ -108,7 +119,8 @@ export default LoginScreen =  ({navigation}) => {
 
            </View>
 
-
-        </View>
+        
+            </SafeAreaView>
+            </ScrollView>
     );
 }
