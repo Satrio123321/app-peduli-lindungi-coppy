@@ -26,7 +26,7 @@ import {
   LogoFind,
 } from "../../assets";
 
-export default HomeScreen = () => {
+export default HomeScreen = ({ navigation }) => {
   return (
     <SafeAreaView style={{ flex: 1 }}>
       <StatusBar barStyle="light-content" animated={true} color="#61dafb" />
@@ -207,7 +207,7 @@ export default HomeScreen = () => {
             }}>
             <TouchableOpacity
               style={{ alignItems: "center" }}
-              onPress={() => navigation.navigate("")}>
+              onPress={() => navigation.navigate("VaccineScreen")}>
               <Image
                 style={{
                   width: 110,
