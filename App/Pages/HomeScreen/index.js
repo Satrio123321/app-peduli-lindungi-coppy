@@ -90,6 +90,7 @@ export default HomeScreen = ({ navigation }) => {
             borderTopRightRadius: 20,
             borderWidth: 1,
             elevation: 1,
+            borderColor: "#D9D9D9",
           }}>
           <View
             style={{
@@ -143,10 +144,11 @@ export default HomeScreen = ({ navigation }) => {
           style={{
             flexDirection: "row",
             marginHorizontal: 20,
-            borderWidth: 0.5,
+            borderWidth: 1,
             borderBottomLeftRadius: 20,
             borderBottomRightRadius: 20,
             alignItems: "center",
+            borderColor: "#D9D9D9",
           }}>
           <View
             style={{
