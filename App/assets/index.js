@@ -8,7 +8,7 @@ import Loginlogo from './img/logo-top.png';
 
 import LogoEntering from './img/ic_hand_qr.jpg';
 
-import LogoVaccine from './img/ic_vaccine_and_im_muniazation.jpg';
+import LogoVaccine from './img/ic_vaccine_and_immuniazation.jpg';
 import LogoCovid from './img/ic_covid_test_result.jpg';
 import LogoEhac from './img/ic_ehac.jpg';
 import LogoTravel from './img/ic_travel_regulation.jpg';
