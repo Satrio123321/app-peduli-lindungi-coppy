@@ -3,7 +3,6 @@ import * as React from "react";
 import {
   View,
   Text,
-  TextInput,
   Image,
   TouchableOpacity,
   StatusBar,
@@ -21,7 +20,7 @@ export default VaccineScreen = ({ navigation }) => {
         <StatusBar barStyle="light-content" animated={true} color="#61dafb" />
         <View
           style={{
-            paddingVertical: 40,
+            paddingVertical: 20,
             flexDirection: "row",
             alignItems: "center",
           }}>
@@ -48,7 +47,7 @@ export default VaccineScreen = ({ navigation }) => {
 
         <View
           style={{
-            marginTop: 20,
+            marginTop: 40,
             padding: 20,
             flexDirection: "row",
             borderWidth: 1,
@@ -61,7 +60,7 @@ export default VaccineScreen = ({ navigation }) => {
           <View style={{}}>
             <Image
               style={{
-                width: 100,
+                width: 110,
                 height: 110,
                 borderWidth: 0,
                 borderRadius: 20,
@@ -110,7 +109,7 @@ export default VaccineScreen = ({ navigation }) => {
           <View style={{}}>
             <Image
               style={{
-                width: 100,
+                width: 110,
                 height: 110,
                 borderWidth: 0,
                 borderRadius: 20,
@@ -161,7 +160,7 @@ export default VaccineScreen = ({ navigation }) => {
           <View style={{}}>
             <Image
               style={{
-                width: 100,
+                width: 110,
                 height: 110,
                 borderWidth: 0,
                 borderRadius: 20,
