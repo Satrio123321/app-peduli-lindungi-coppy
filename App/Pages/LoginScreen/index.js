@@ -18,6 +18,8 @@ import {
   Logobumn,
 } from "../../assets";
 
+import Feather from "react-native-vector-icons/Feather";
+
 export default LoginScreen = ({ navigation }) => {
   return (
     <ScrollView>
@@ -40,31 +42,68 @@ export default LoginScreen = ({ navigation }) => {
 
         <View
           style={{
-            margin: 10,
+            paddingtop: 20,
+            marginTop: 15,
+            marginBottom: 10,
           }}>
-          <TextInput
+          <View
             style={{
               borderWidth: 1,
-              padding: 10,
+              flexDirection: "row",
+              alignItems: "center",
               marginHorizontal: 30,
               marginVertical: 10,
-              paddingHorizontal: 20,
               borderRadius: 10,
-            }}
-            placeholder="Youremail@domain.com"
-          />
+            }}>
+            <Feather
+              name="mail"
+              size={25}
+              style={{
+                color: "#696969",
+                marginStart: 20,
+              }}>
+              {" "}
+            </Feather>
 
-          <TextInput
-            style={{
-              borderWidth: 1,
-              padding: 10,
-              marginHorizontal: 30,
-              marginVertical: 10,
-              paddingHorizontal: 20,
-              borderRadius: 10,
-            }}
-            placeholder="Password"
-          />
+            <TextInput
+              style={{
+                paddingRight: 50,
+                paddingVertical: 10,
+                marginStart: 5,
+              }}
+              placeholder="Youremail@domain.com"
+            />
+          </View>
+          <View>
+            <View
+              style={{
+                borderWidth: 1,
+                flexDirection: "row",
+                alignItems: "center",
+                marginHorizontal: 30,
+                marginVertical: 10,
+                borderRadius: 10,
+              }}>
+              <Feather
+                name="mail"
+                size={25}
+                style={{
+                  color: "#696969",
+                  marginStart: 20,
+                }}>
+                {" "}
+              </Feather>
+
+              <TextInput
+                style={{
+                  paddingRight: 50,
+                  paddingVertical: 10,
+                  marginStart: 5,
+                }}
+                placeholder="Password"
+              />
+            </View>
+          </View>
         </View>
 
         <TouchableOpacity onPress={() => navigation.navigate("HomeScreen")}>
@@ -74,7 +113,7 @@ export default LoginScreen = ({ navigation }) => {
               justifyContent: "center",
               alignItems: "center",
               padding: 15,
-              marginHorizontal: 60,
+              marginHorizontal: 50,
               marginTop: 10,
               borderWidth: 0,
               borderRadius: 10,
