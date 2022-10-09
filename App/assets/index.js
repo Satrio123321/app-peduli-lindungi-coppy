@@ -21,6 +21,8 @@ import LogoVacCovid from "./img/ic_covid.jpg";
 import LogoVacCheckin from "./img/ic_check_in.jpg";
 import LogoVacChild from "./img/ic_child.jpg";
 
+import LogoCovidResult from "./img/ic_empty.jpg";
+
 export {
   IconSplash,
   Logokpcpen,
@@ -40,4 +42,5 @@ export {
   LogoVacCovid,
   LogoVacCheckin,
   LogoVacChild,
+  LogoCovidResult,
 };

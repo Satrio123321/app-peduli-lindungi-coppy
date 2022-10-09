@@ -1,7 +1,13 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 
-import { SplashScreen, LoginScreen, HomeScreen, VaccineScreen } from "./Pages";
+import {
+  SplashScreen,
+  LoginScreen,
+  HomeScreen,
+  VaccineScreen,
+  CovidResultScreen,
+} from "./Pages";
 
 const Stack = createStackNavigator();
 
@@ -26,6 +32,11 @@ export default Router = () => {
       <Stack.Screen
         name="VaccineScreen"
         component={VaccineScreen}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="CovidResultScreen"
+        component={CovidResultScreen}
         options={{ headerShown: false }}
       />
     </Stack.Navigator>

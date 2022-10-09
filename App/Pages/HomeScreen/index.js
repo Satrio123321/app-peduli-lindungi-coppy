@@ -233,7 +233,7 @@ export default HomeScreen = ({ navigation }) => {
             }}>
             <TouchableOpacity
               style={{ alignItems: "center" }}
-              onPress={() => navigation.navigate("")}>
+              onPress={() => navigation.navigate("CovidResultScreen")}>
               <Image
                 style={{
                   width: 110,
