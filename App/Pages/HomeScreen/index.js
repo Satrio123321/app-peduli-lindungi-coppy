@@ -6,6 +6,7 @@ import {
   Image,
   ScrollView,
   TouchableOpacity,
+  Alert,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
@@ -25,6 +26,17 @@ import {
   LogoCovid19,
   LogoFind,
 } from "../../assets";
+
+const Pengembangan = () => {
+  Alert.alert("Info", "Module Dalam Pengembangan", [
+    {
+      text: "ok",
+      onPress: () => {
+        console.log("ok");
+      },
+    },
+  ]);
+};
 
 export default HomeScreen = ({ navigation }) => {
   return (
@@ -257,7 +269,7 @@ export default HomeScreen = ({ navigation }) => {
             }}>
             <TouchableOpacity
               style={{ alignItems: "center" }}
-              onPress={() => navigation.navigate("")}>
+              onPress={() => navigation.navigate("EhacScreen")}>
               <Image
                 style={{
                   width: 110,
@@ -288,7 +300,7 @@ export default HomeScreen = ({ navigation }) => {
             }}>
             <TouchableOpacity
               style={{ alignItems: "center" }}
-              onPress={() => navigation.navigate("")}>
+              onPress={Pengembangan}>
               <Image
                 style={{
                   width: 110,
@@ -312,7 +324,7 @@ export default HomeScreen = ({ navigation }) => {
             }}>
             <TouchableOpacity
               style={{ alignItems: "center" }}
-              onPress={() => navigation.navigate("")}>
+              onPress={Pengembangan}>
               <Image
                 style={{
                   width: 110,
@@ -335,7 +347,7 @@ export default HomeScreen = ({ navigation }) => {
             }}>
             <TouchableOpacity
               style={{ alignItems: "center" }}
-              onPress={() => navigation.navigate("")}>
+              onPress={Pengembangan}>
               <Image
                 style={{
                   width: 110,
@@ -367,7 +379,7 @@ export default HomeScreen = ({ navigation }) => {
             }}>
             <TouchableOpacity
               style={{ alignItems: "center" }}
-              onPress={() => navigation.navigate("")}>
+              onPress={Pengembangan}>
               <Image
                 style={{
                   width: 110,
@@ -391,7 +403,7 @@ export default HomeScreen = ({ navigation }) => {
             }}>
             <TouchableOpacity
               style={{ alignItems: "center" }}
-              onPress={() => navigation.navigate("")}>
+              onPress={Pengembangan}>
               <Image
                 style={{
                   width: 110,
