@@ -23,6 +23,11 @@ import LogoVacChild from "./img/ic_child.jpg";
 
 import LogoCovidResult from "./img/ic_empty.jpg";
 
+import LogoBgEhac from "./img/bg_ehc.jpg";
+
+import LogoEhacCreate from "./img/ic_create_ehc.jpg";
+import LogoEhacMyE from "./img/ic_my_ehc.jpg";
+
 export {
   IconSplash,
   Logokpcpen,
@@ -43,4 +48,7 @@ export {
   LogoVacCheckin,
   LogoVacChild,
   LogoCovidResult,
+  LogoBgEhac,
+  LogoEhacCreate,
+  LogoEhacMyE,
 };
