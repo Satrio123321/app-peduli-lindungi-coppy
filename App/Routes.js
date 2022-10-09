@@ -7,6 +7,7 @@ import {
   HomeScreen,
   VaccineScreen,
   CovidResultScreen,
+  EhacScreen,
 } from "./Pages";
 
 const Stack = createStackNavigator();
@@ -37,6 +38,11 @@ export default Router = () => {
       <Stack.Screen
         name="CovidResultScreen"
         component={CovidResultScreen}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="EhacScreen"
+        component={EhacScreen}
         options={{ headerShown: false }}
       />
     </Stack.Navigator>
