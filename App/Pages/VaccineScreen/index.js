@@ -18,6 +18,7 @@ export default VaccineScreen = ({ navigation }) => {
   return (
     <ScrollView>
       <SafeAreaView style={{ flex: 1 }}>
+        <StatusBar barStyle="light-content" animated={true} color="#61dafb" />
         <View
           style={{
             paddingVertical: 40,
