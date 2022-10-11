@@ -18,7 +18,7 @@ export default CovidResultScreen = ({ navigation }) => {
   return (
     <ScrollView style={{ backgroundColor: "white" }}>
       <SafeAreaView style={{ flex: 1, backgroundColor: "white" }}>
-        <StatusBar barStyle="light-content" animated={true} color="#61dafb" />
+        <StatusBar barStyle="light-content" animated={true} color="#fff8dc" />
         <View
           style={{
             paddingVertical: 20,

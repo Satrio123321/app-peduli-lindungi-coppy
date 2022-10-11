@@ -41,7 +41,7 @@ const Pengembangan = () => {
 export default HomeScreen = ({ navigation }) => {
   return (
     <SafeAreaView style={{ flex: 1 }}>
-      <StatusBar barStyle="light-content" animated={true} color="#61dafb" />
+      <StatusBar barStyle="light-content" animated={true} color="#fff8dc" />
       <ScrollView>
         <View
           style={{
