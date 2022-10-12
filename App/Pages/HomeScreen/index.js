@@ -32,7 +32,7 @@ const Pengembangan = () => {
     {
       text: "ok",
       onPress: () => {
-        console.log("ok");
+        console.log("Dalam Pengembangan");
       },
     },
   ]);
